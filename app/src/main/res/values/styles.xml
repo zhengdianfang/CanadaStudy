@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="LoadingAppTheme" parent="AppTheme">
+        <item name="android:windowBackground">@mipmap/load_background</item>
+    </style>
+
+    <style name="university_map_float_textstyle">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="university_map_mark_buttonstyle">
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="common_listview_style">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:divider">#f7f7f7</item>
+        <item name="android:dividerHeight">0px</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:listSelector">@null</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="study_info_fragment_textstyle3">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#eedef2f7">
+
+
+        <ImageView
+            android:id="@+id/imagg_aa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/study_info_pic_14"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagg_aa"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/listTab1"
+                style="@style/study_info_fragment_textstyle3"
+                android:background="@android:color/white"
+                android:textColor="@color/project_ee3223"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/list_tab_1"/>
+
+            <TextView
+                android:id="@+id/listTab2"
+                style="@style/study_info_fragment_textstyle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/list_tab_2"/>
+
+            <TextView
+                android:id="@+id/listTab3"
+                style="@style/study_info_fragment_textstyle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/list_tab_3"/>
+
+
+            <TextView
+                android:id="@+id/listTab4"
+                style="@style/study_info_fragment_textstyle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/list_tab_6"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitStart"
+            android:src="@mipmap/study_info_pic_15"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

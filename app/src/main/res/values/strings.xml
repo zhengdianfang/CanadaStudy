@@ -1,0 +1,170 @@
+<resources>
+     <string name="app_name">留学加拿大官方应用</string>
+    <!--<string name="app_name">留学加拿大</string>-->
+    <string name="main_text_1"><![CDATA[ <h4>官方留学信息</h4>加拿大留学的优势<br />学习、生活、成功<br />创新型教育机构一览]]></string>
+    <string name="join_school_1">%s参展学校</string>
+    <string name="beijing">北京</string>
+    <string name="shanghai">上海</string>
+    <string name="zhengzhou">郑州</string>
+    <string name="wuhan">武汉</string>
+    <string name="nanjin">南京</string>
+    <string name="guangzhou">广州</string>
+    <string name="chongqing">重庆</string>
+    <string name="chengdu">成都</string>
+    <string name="school_phone">学校电话:%s</string>
+    <string name="school_email">学校邮箱:%s</string>
+    <string name="school_net_1">学校网站:%s</string>
+    <string name="join_city">参展城市</string>
+    <string name="search_str">Search</string>
+    <string name="title_activity_canadian_infor">CanadianInforActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="list_tab_1">加拿大介绍</string>
+    <string name="list_tab_2">学习生活成功</string>
+    <string name="list_tab_3">加拿大教育体系一览</string>
+    <string name="list_tab_4">校友经验分享</string>
+    <string name="list_tab_6">相关资源</string>
+
+    <string name="content_1">世界上领土面积第二大国\n三千四百万人口，分布于十个省及三个地区。\n稳定的议会民主制。\n生活水平较高，社会环境安全稳定。\n经济合作与发展组织成员国中人均大学教育投入排名第七。\n
+        民族多元化－－大量移民居住在多伦多，蒙特利尔和温哥华。\n
+        世界领先的大学研发水平，高等教育投入位列七国集团榜首。\n
+        教育是各省政府和地区政府的职责。\n
+        英语或法语授课，部分学校提供英法双语授课。\n
+        一年三次入学时间：一月/五月/九月。\n
+        国际学生通常可于学习期内外打工。\n
+    </string>
+    <string name="content_3"><![CDATA[“10&#037;的加拿大大学跻身<font color="#2f79b6">世界大学前二百强</font>。”<br /> <small>&#8211;《泰晤士高等教育》2015–2016年世界大学排名</small><br />
+<br />加拿大的中学以及高等教育机构在国际排名中持续排名前列，加拿大的中学生和高等院校学生经常在国际比赛中屡获高分。高素质的教育工作者、行业领先的专业教授创造了一个培育创造力和聪明才智的学习环境。<br/>加拿大的大学担任国家约38&#037;的研发工作。加拿大虽然只有约占全球0.5&#037;的人口，但他们从事着全球科学研究总量中2.8&#037;的研究工作。<br />而且，加拿大的大学拥有高度数字化联网的图书馆、奥运殿堂级的体育设施、公共音乐厅、艺术画廊等顶级设施。]]></string>
+    <string name="content_2_1"><![CDATA[只要您有梦想，我们就能帮助您美梦成真。<br/>加拿大通过250所高等院校提供的1万多种英语或法语授课的大学课程及8000多种学院课程，为来自世界各地的留学生提供一流教育。最重要的是，您可以将所学运用到高回报的工作中，为您在加拿大这个超酷的国家开启一个充满机遇的广阔未来。<br/><br/>“加拿大是最适合学习、访问、工作和生活的国家。”
+－声誉研究所2015年研究报告]]></string>
+    <string name="content_2_2"><![CDATA[“加拿大是最适合学\n习、访问、工作和生活的国家。”]]></string>
+    <string name="content_2_3"><![CDATA[－声誉研究所2015年研究报告]]></string>
+    <string name="content_6_1"><![CDATA[<h5>大学</h5>• 丰富的本科和研究生课程，职业资质、证书和文凭课程以及短期课程等选择<br />• 前沿的科技技术和研究实验室<br />• 带薪实习、 工作/学习课程和企业实践等机会]]></string>
+    <string name="content_6_2"><![CDATA[<h5>学院、加拿大普通学院与职业教育学院、理工学院</h5>• 全方位的课程选择，时长从数月到四年不等<br />• 提供证书、文凭、大学转学课程、学术和应用学位以及研究生文凭等多种学历<br />• 与潜在雇主合作设计的实用课程，增加就业的机会]]></string>
+    <string name="content_6_3"><![CDATA[<h5>小学和中学</h5>• 加拿大的中学毕业生科学、阅读和数学方面表现优异<br />• 良好的师生比例<br />• 以学生需求为本的培养环境]]></string>
+    <string name="content_4"><![CDATA[“加拿大在<font color="#f19b37">生活质量方面位居世界第一位</font>。”<br />
+<small> &#8211;《美国新闻》最佳国家排名</small><br />
+<br />加拿大被“2015年全球国家品牌指数”评为全球最热情好客的国家，加拿大人是公认的友好、开放和宽容－因为有很多加拿大人的根源可追朔到世界的角落。<br />加拿大在2015年“国际和平指数”中排名首位，在加学习的留学生同样享受加拿大人享有的所有自由：尊重人权、平等以及一个和平稳定的社会。加拿大人凭借其平均寿命长、人均收入高以及强健的社会关系而成为地球上最幸福的人群，这实在是不足为奇。]]></string>
+    <string name="content_5_1"><![CDATA[“<font color="#d93b2b">在毕业生就业</font>方面，加拿大位居十六国首位。”<br />
+<small>－汇丰银行有关海外大学教育成本报告（2015年）</small>]]></string>
+    <string name="content_5_2"><![CDATA[大多数留学生在学习期间，有资格在校园内外工作，这为留学生提供机会跨出专业学习，在真正的工作场所中应用和检验自身能力。事实上，加拿大的很多课程是与潜在雇主合作设计的，为学生提供实习机会。]]></string>
+
+    <string name="content_7">
+        作为一个双语国家和移民国家，加拿大在英语和法语培训方面居全球领先地位。\n专门教授英语和法语的私立学校和学院，经常专门针对国际学生和新移民。\n提供专业领域的语言培训，比如商务英语、学术预备，以及特定行业外语等。\n一般四周的课程，学费从一千加币到两千加币不等。\n寄宿在当地家庭也是非常普通的选择，每月大概在一千加币左右。\n
+    </string>
+
+    <string name="content_8_1">
+        提供非寄宿制男女同校课程\n专门为国际学生提供的寄宿家庭课程\n根据院校的不同，每年的学费和寄宿费用大约在一万五百加币到两万三千加币之间
+    </string>
+    <string name="content_8_2">
+       独立资金支持\n男女同校、同校、女校多种选择\n小班授课和较低的老师学生比例\n学生自由选择学校住宿或者家庭寄宿\n根据院校的不同，每年的学费和寄宿费用从两万五千加币到四万五千加币不等
+    </string>
+
+    <string name="content_9">
+        <![CDATA[加拿大不仅自然环境优美，其教育制度也提供了多样的视角和选择，是个学习的好地方。<br />在加拿大的生活让我领略到了一个多元文化的社会。从同学到邻居，他们丰富的文化习俗也渲染了我的学习经历。这一切一直陪我度过在英属哥伦比亚大学的大学时光。在那里，我逐渐培养了对亚太地区的兴趣。<br />而正在卡普兰诺大学的亚太管理实习项目使我来到了北京。得益于加拿大教育背景和多语种技能，我成为一家国际咨询公司的经理人，帮助国外企业在中国开展经营活动。<br />加拿大教育系统培养学生全球化的思考方式和开放性的认知理念。它为那些勇于迎接挑战的人，打开了一扇扇大门，提供了无数令人兴奋的机会。<br />
+<br />
+<strong>郭秉麟</strong><br />
+<strong>市场及业务营运经理，NCO China</strong><br />
+<strong>英属哥伦比亚大学，1999，卡普兰诺大学，2002</strong>]]>
+    </string>
+
+    <string name="content_10">
+        <![CDATA[在加拿大学习和生活是终生难忘的经历，对我而言有着举足轻重的意义。尤其是作为一个作曲家和艺术家，它帮助我建立自信，使我受到启发，重新发现了我的音乐根源和文化传承，这些精华也融入我的作品中。<br />
+<br />
+<strong>史付红</strong><br />
+<strong>作同家，中央音乐学院教授，</strong><br />
+<strong>音乐硕士（作曲），维多利亚大学，2005年</strong><br />
+<strong>音乐博士（作曲），多伦多大学，2010年</strong>]]>
+    </string>
+     <string name="content_11">
+        <![CDATA[加拿大和蒙特埃里森大学以其一贯的优质教育闻名，也正是这点吸引我来到这里学习。蒙特埃里森大学是个生活和学习的好地方。老师们是令我崇拜的一流教授和学者，他们都关心我，定期回复我的邮件，记得我的名字，对我的生活和学习关怀有加。我爱美丽的校园、热情的人们、怡人的社区和这种持续一生的友谊。<br />
+<br />
+<strong>邹薇巍</strong><br />
+<strong>主修商学，辅修数学和经济学</strong><br />
+<strong>蒙特埃里森大学2012届学生</strong>]]>
+    </string>
+    <string name="content_12">
+        <![CDATA[我以前在中国是读机械工程专业的，成绩还不错，但那却不是我最心仪的专业。我之所以去加拿大就是为了开拓视野，寻找更令人兴奋的人生经历。我选择了乔治布朗学院的旅游管理课程，并在学习期间对酒文化产生了浓厚的兴趣。毕业后就在加拿大职业侍酒协会接受培训成为一名职业侍酒师。从那以后，我就在希尔顿酒店集团全身心地做 着与葡萄酒有关的工作。加拿大的经历改变了我的人生轨迹，感谢加拿大教育成就了现在的我。<br />
+<br />
+<strong>Julia Zhu</strong><br />
+<strong>乔治布朗学院  旅游管理专业</strong><br />
+<strong>北京希尔顿酒店  侍酒师</strong><br />]]>
+    </string>
+    <string name="content_13">
+        <![CDATA[去加拿大留学是我一生做的最明智的决定。我在毅伟商学院不但学有所成，而且积累了丰富的人脉。同学们经过两年的共同学习和生活，都变成了亲人和朋友。2008年当我回国时，我很轻松的通过在中国的校友网络找到现在的工作。因此，我也志愿成国毅伟商学院在中国校友会的带头人。<br />
+<br />
+<strong>刘晔</strong><br />
+<strong>高级商务拓展经理，阿特金斯</strong><br />
+<strong>西安大略大学毅伟商学院  MBA,2005</strong>]]>
+    </string>
+
+    <string name="content_14_1">
+        也许听上去难以置信，我成功地从天体物理学专业转到了中世纪历史研究。没有多伦多大学给与学生的学术自由度和对学生能力的信任，这样的专业转变几乎是不可能的。我还从中学到了如何为自己做出的人生决定负责和如何正视自己的兴趣爱好。
+    </string>
+
+    <string name="content_14_2">
+        Adrian Su\n多伦多大学
+    </string>
+
+    <string name="content_15_1">
+        这里的语言学习不仅注重听说能力、语法和发音，更培养了我顺利进入加拿大大学功读专业的学习技能。许多托福和雅思成绩很好的外国同学开始专业课学习时却不知道如何应付学术论文、团队协作，专题演讲等实际问。而我在语言学院就已有充足机会得到相应的锻炼从而能应付自如了。学院给每个人在课后安排加拿大同学一对一的帮助，让我们讯速掌握了日常用语。
+    </string>
+
+    <string name="content_15_2">
+       Jane Fan\n加拿大约克大学英语语言学院
+    </string>
+    <string name="content_16_1">
+        2004年我到了美丽的温哥华西蒙弗雷泽大学功读我的硕士学位。两年短暂的时间我却收获颇丰。紧凑的课程、一流的师资、和来自世界各地的同学们都很棒，就连超市和餐馆里偶遇的人们也很友善。加拿大的学习和生活经历真是我人生的宝贵财富，使我学会用积极，勇敢和有创造性的态度去对待工作和生活。
+    </string>
+
+    <string name="content_16_2">荣娜\n大中华区财务分析师 IBM China\n西蒙弗雷泽大学 硕士（2006）</string>
+
+    <string name="content_17_1">我的研究课题结合了超快激光与扫描近场光学显微镜的纳米制造技术能够突破聚焦激光束的衍射极限，将激光加工精度提高到纳米级别。新型纳米加工系统的成功研制将推动加拿大在纳米技术领域取得领先地位。\n2009年我获得了加拿大政府凡尼尔博士研究奖学金连续三年每年五万加币的资助。
+    </string>
+    <string name="content_17_2">卢平\n纽芬兰纪念大学物理和海洋地理学系\n博士生
+    </string>
+    <string name="content_18">
+        <strong>加拿大教育文凭全世界认可。</strong>加拿大在英语和法语培训方面居全球领先地位。<br/>
+<br/>
+<strong>合理的费用。</strong>国际学生在加拿大的学习和生活费用平均较低。<br/>
+<br/>
+<strong>与众不同的国家。</strong>加拿大人以好客、开放和宽容著称。加拿大接纳了来自世界各地200种不同种族的人们。<br/>
+<br/>
+<strong>健康安全的社区环境。</strong>你将享有加拿大人可以享受到的同等自由权利：尊重人权、注重平等、追求和平和安定。<br/>
+<br/>
+<strong>世界一流的语言教育。</strong>法语和英语作为第一语言和第二语言教育是加拿大教育体系的重要内容。<br/>
+<br/>
+<strong>丰富多彩的校园生活。</strong>从联网图书馆和奥林匹克场馆级的体育设施到公共音乐厅和美术馆，加拿大的高等院校校园让你能更好的将学习和休闲娱乐结合起来。<br/>
+<br/>
+<strong>创新和众多的研究机会。</strong>加拿大的教育体系植根于我们优秀的研究设施和科研发展的文化。<br/>
+<br/>
+<strong>一个充满机遇的国家。</strong>加拿大景色美丽多样，四季分明。
+    </string>
+    <string name="content_19">
+      加拿大联邦政府国际教育官方门户网站\n
+        www.EduCanada.ca\n
+        包括全加院校及课程专业搜索、留学费用计算器、学习签证和学习许可信息等内容，以及加拿大各省和地区教育部门及各个院校网站信息链接。
+        加拿大国际学历认证信息中心\n\n
+（Canadian Information Center for International Credentials,CICIC\n
+www.cicic.ca\n
+是唯一在线提供加拿大各省、地区认可和授权的大学、学院及学校权威性目录的网站，此外该网站还包括国外文凭评估和资格认可等信息。\n\n
+学习签证和学习证可\n
+www.cic.gc.ca/english/study\n\n
+奖学金资助项目\n
+访问www.scholarships.gc.ca\n\n
+        校园内外的工作政策\n
+www.cic.gc.ca/english/study/work.asp\n\n
+毕业后留加工作的政策\n
+www.cic.gc.ca/english/study/work-postgrad.asp\n
+若有兴趣长期留加工作，有多个项目可申请，生个项目有各自不同要求。这些项目包括：\n
+加拿大经验类移民项目\n
+www.cic.gc.ca/cec\n\n
+联邦技工移民项目\n
+www.cic.gc.ca/english/immigrate/skilled\n\n
+        各省提民移民项目\n
+www.cic.gc.ca/english/immigrate/provincial\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+    </string>
+</resources>

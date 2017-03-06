@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.manuelpeinado.imagelayout.ImageLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            custom:fit="both"
+            custom:image="@drawable/canadain_map"
+            custom:imageHeight="703"
+            custom:imageWidth="508">
+
+            <ImageView
+                android:id="@+id/map_button_1"
+                style="@style/university_map_mark_buttonstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/map_mark_icon"
+                custom:layout_centerY="519"
+                custom:layout_left="50"/>
+
+
+            <ImageView
+                android:id="@+id/map_button_2"
+                style="@style/university_map_mark_buttonstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/map_mark_icon"
+                custom:layout_centerY="530"
+                custom:layout_left="100"
+                />
+
+            <ImageView
+                android:id="@+id/map_button_3"
+                style="@style/university_map_mark_buttonstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/map_mark_icon"
+                custom:layout_centerY="515"
+                custom:layout_left="150"
+                />
+
+            <ImageView
+                android:id="@+id/map_button_4"
+                style="@style/university_map_mark_buttonstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/map_mark_icon"
+                custom:layout_centerY="530"
+                custom:layout_left="200"
+                />
+
+
+            <ImageView
+                android:id="@+id/map_button_5"
+                style="@style/university_map_mark_buttonstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/map_mark_icon"
+                custom:layout_centerY="635"
+                custom:layout_left="320"
+                />
+
+            <ImageView
+                android:id="@+id/map_button_6"
+                style="@style/university_map_mark_buttonstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/map_mark_icon"
+                custom:layout_centerY="575"
+                custom:layout_left="360"
+                />
+
+            <ImageView
+                android:id="@+id/map_button_7"
+                style="@style/university_map_mark_buttonstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/map_mark_icon"
+                custom:layout_centerY="530"
+                custom:layout_left="420"
+                />
+
+
+            <ImageView
+                android:id="@+id/map_button_8"
+                style="@style/university_map_mark_buttonstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/map_mark_icon"
+                custom:layout_centerY="590"
+                custom:layout_left="430"
+                />
+
+            <TextView
+                android:id="@+id/floatTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:background="@drawable/map_float_background"/>
+
+        </com.manuelpeinado.imagelayout.ImageLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="提示：点击地图或下方学校分类以查找学校"
+        android:textColor="#6f6d6e"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/map_top_icon"/>
+</RelativeLayout>

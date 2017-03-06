@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009aa6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/beijingTabView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/beijing_icon"
+            android:gravity="center"
+            android:text="北京"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/shanghaiTabView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/shanghai_icon"
+            android:gravity="center"
+            android:text="上海"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/guangzhouTabView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/guangzhou"
+            android:gravity="center"
+            android:text="广州"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/chengduTabView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/chongqing"
+            android:gravity="center"
+            android:text="成都"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+        <!-- <TextView
+             android:id="@+id/nanjingTabView"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:layout_marginLeft="16dp"
+             android:layout_marginRight="16dp"
+             android:gravity="center"
+             android:drawableTop="@mipmap/nanjin"
+             android:drawablePadding="8dp"
+             android:textSize="16sp"
+             android:textColor="@android:color/black"
+             android:text="南京"/>
+         <TextView
+             android:id="@+id/wuhanTabView"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:layout_marginLeft="16dp"
+             android:layout_marginRight="16dp"
+             android:gravity="center"
+             android:drawableTop="@mipmap/wuhan_icon"
+             android:drawablePadding="8dp"
+             android:textSize="16sp"
+             android:textColor="@android:color/black"
+             android:text="武汉"/>
+
+         <TextView
+             android:id="@+id/zhengzhouTabView"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:layout_marginLeft="16dp"
+             android:layout_marginRight="16dp"
+             android:gravity="center"
+             android:drawableTop="@mipmap/zhengzhou"
+             android:drawablePadding="8dp"
+             android:textSize="16sp"
+             android:textColor="@android:color/black"
+             android:text="郑州"/>-->
+
+
+    </LinearLayout>
+
+</merge>
