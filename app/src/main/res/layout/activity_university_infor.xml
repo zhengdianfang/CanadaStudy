@@ -12,13 +12,17 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#0083a9"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1"
-        android:id="@+id/toolbar2">
+        android:id="@+id/toolbar2"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp">
 
         <ImageButton
             android:id="@+id/backImage"
@@ -52,15 +56,6 @@
             android:src="@mipmap/search_icon"/>
 
     </android.support.v7.widget.Toolbar>
-
-    <FrameLayout
-        android:id="@+id/contentFrame"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2"></FrameLayout>
 
 
     <FrameLayout
@@ -111,5 +106,16 @@
         </LinearLayout>
 
     </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.0"></FrameLayout>
 
 </android.support.constraint.ConstraintLayout>
