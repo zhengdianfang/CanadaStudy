@@ -74,7 +74,9 @@ public class DatasUtils {
             case R.raw.chengdu:
                 city = context.getString(R.string.chengdu);
                 break;
-
+            case R.raw.xian:
+                city = context.getString(R.string.xian);
+                break;
         }
 
         try {

@@ -5,14 +5,13 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-   <!-- <HorizontalScrollView
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="none">-->
+        android:scrollbars="none">
 
        <include layout="@layout/city_select_tab_layout" />
-<!--
-    </HorizontalScrollView>-->
+    </HorizontalScrollView>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"

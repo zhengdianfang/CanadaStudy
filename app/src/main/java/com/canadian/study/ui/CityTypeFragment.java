@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.canadian.study.R;
 import com.canadian.study.bean.SchoolCity;
 import com.canadian.study.bean.University;
+import com.canadian.study.common.Constants;
 import com.canadian.study.common.DatasUtils;
 import com.canadian.study.ui.adapter.OnItemClickListener;
 import com.canadian.study.ui.adapter.UniversityItemAdapter;
@@ -30,20 +31,13 @@ import rx.schedulers.Schedulers;
 
 public class CityTypeFragment extends Fragment implements OnItemClickListener {
 
-    private int[] tabViewIds = {R.id.beijingTabView, R.id.shanghaiTabView, R.id.guangzhouTabView, R.id.chengduTabView};
 
-    private int[] tabViewNormalBackgroundIds = {R.drawable.beijing_icon_drawable_normal, R.drawable.shanghai_icon_drawable_normal,
-            R.drawable.guangzhou_icon_drawable_normal, R.drawable.chengdu_icon_drawable_normal};
 
-    private int[] tabViewSelectedBackgroundIds = {R.drawable.beijing_icon_drawable_selected, R.drawable.shanghai_icon_drawable_selected,
-            R.drawable.guangzhou_icon_drawable_selected, R.drawable.chengdu_icon_drawable_selected};
 
-    private String[] citynames = {"北京", "上海", "广州", "成都"};
-
-    private TextView[] tabViews = new TextView[4];
 
     private UniversityItemAdapter universityItemAdapter;
     private int selectTabIndex = 0;
+    private ViewGroup tablayout;
 
     @Nullable
     @Override
@@ -60,11 +54,34 @@ public class CityTypeFragment extends Fragment implements OnItemClickListener {
         RecyclerView recyclerView = (RecyclerView) getView().findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(universityItemAdapter);
+        tablayout = (ViewGroup) getView().findViewById(R.id.tablayout);
+        assembleTabLayout();
+        changeTabBackground(selectTabIndex);
+        queryUniversityList();
+    }
 
-        for (int i = 0; i < tabViewIds.length; i++) {
-            tabViews[i] = (TextView) getView().findViewById(tabViewIds[i]);
-            tabViews[i].setTag(i);
-            tabViews[i].setOnClickListener(view -> {
+    void changeTabBackground(int i) {
+        for (int i1 = 0; i1 < tablayout.getChildCount(); i1++) {
+            TextView childAt = (TextView) tablayout.getChildAt(i1);
+            if (i1 == i){
+                childAt.setCompoundDrawablesWithIntrinsicBounds(0, Constants.tabViewSelectedBackgroundIds[i1], 0, 0);
+            }else {
+                childAt.setCompoundDrawablesWithIntrinsicBounds(0, Constants.tabViewNormalBackgroundIds[i1],0 ,0);
+            }
+        }
+
+    }
+
+
+    private void assembleTabLayout() {
+
+        for (int i = 0; i < Constants.citynames.length; i++) {
+            TextView tabView = (TextView) LayoutInflater.from(getContext()).inflate(R.layout.city_tab_item_layout, null);
+            tabView.setText(Constants.citynames[i]);
+            tabView.setCompoundDrawablesWithIntrinsicBounds(0, Constants.tabViewNormalBackgroundIds[i], 0, 0);
+            tabView.setTag(i);
+            tabView.setPadding(72, 0, 72, 0);
+            tabView.setOnClickListener(view -> {
                 int tag = (int) view.getTag();
                 if (tag != selectTabIndex){
                     selectTabIndex = tag;
@@ -72,30 +89,18 @@ public class CityTypeFragment extends Fragment implements OnItemClickListener {
                     queryUniversityList();
                 }
             });
+            tablayout.addView(tabView);
         }
-        changeTabBackground(selectTabIndex);
-        queryUniversityList();
-    }
-
-    void changeTabBackground(int i) {
-        for (int i1 = 0; i1 < tabViews.length; i1++) {
-            if (i1 == i){
-                tabViews[i1].setCompoundDrawablesWithIntrinsicBounds(0, tabViewSelectedBackgroundIds[i1], 0, 0);
-            }else {
-                tabViews[i1].setCompoundDrawablesWithIntrinsicBounds(0, tabViewNormalBackgroundIds[i1],0 ,0);
-            }
-        }
-
     }
 
     private void queryUniversityList() {
-        universityItemAdapter.setCityName(citynames[selectTabIndex]);
+        universityItemAdapter.setCityName(Constants.citynames[selectTabIndex]);
         Observable.just(DatasUtils.sSchoolCities).flatMap(new Func1<List<SchoolCity>, Observable<List<String>>>() {
             @Override
             public Observable<List<String>> call(List<SchoolCity> schoolCities) {
                 ArrayList<String> strings = new ArrayList<>();
                 for (SchoolCity schoolCity : schoolCities) {
-                    if (schoolCity.joinCity.equals(citynames[selectTabIndex])) {
+                    if (schoolCity.joinCity.equals(Constants.citynames[selectTabIndex])) {
                         strings.add(schoolCity.universityName);
                     }
                 }

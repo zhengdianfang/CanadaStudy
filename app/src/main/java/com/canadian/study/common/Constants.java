@@ -38,7 +38,7 @@ public class Constants {
             "爱德华王子岛"
     };
 
-    public static final int[] boothArr = {R.raw.bejing, R.raw.shanghai,  R.raw.guangzhou, R.raw.chengdu};
+    public static final int[] boothArr = {R.raw.bejing, R.raw.shanghai,  R.raw.guangzhou, R.raw.chongqing, R.raw.xian, R.raw.nanjing, R.raw.zhengzhou};
 
     public static void closeSoftKey(Activity activity) {
         if(null != activity.getCurrentFocus()){
@@ -47,4 +47,14 @@ public class Constants {
         }
     }
 
+
+    public static final int[] tabViewNormalBackgroundIds = {R.drawable.beijing_icon_drawable_normal, R.drawable.shanghai_icon_drawable_normal,
+            R.drawable.guangzhou_icon_drawable_normal, R.drawable.chongqing_icon_drawable_normal, R.drawable.xian_icon_drawable_normal,
+            R.drawable.nanjing_icon_drawable_normal, R.drawable.zhengzhou_icon_drawable_normal};
+
+    public static final int[] tabViewSelectedBackgroundIds = {R.drawable.beijing_icon_drawable_selected, R.drawable.shanghai_icon_drawable_selected,
+            R.drawable.guangzhou_icon_drawable_selected,  R.drawable.chongqing_icon_drawable_selected, R.drawable.xian_icon_drawable_selected,
+            R.drawable.nanjing_icon_drawable_selected, R.drawable.zhengzhou_icon_drawable_selected};
+
+    public static final String[] citynames = {"北京", "上海", "广州", "重庆", "西安", "南京", "郑州"};
 }

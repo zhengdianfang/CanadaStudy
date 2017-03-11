@@ -51,50 +51,47 @@ public class LoadingActivity extends AppCompatActivity {
         String versionName = getPackageManager().getPackageInfo(this.getPackageName(), 0).versionName;
         if (versionName.compareTo(last_version) > 0) {
 
-        }
-        Realm defaultInstance = Realm.getDefaultInstance();
-        defaultInstance.beginTransaction();
-        defaultInstance.delete(University.class);
-        defaultInstance.delete(SchoolCity.class);
-        defaultInstance.commitTransaction();
-        //update pics
-        File file = new File(getCacheDir(), "schoolPics.zip");
-        if (file.exists()) {
-            file.delete();
-            File picDic = new File(getCacheDir(), "school_pics");
-            if (picDic.exists()) {
-                DatasUtils.deleteDir(picDic);
+            Realm defaultInstance = Realm.getDefaultInstance();
+            defaultInstance.beginTransaction();
+            defaultInstance.delete(University.class);
+            defaultInstance.delete(SchoolCity.class);
+            defaultInstance.commitTransaction();
+            //update pics
+            File file = new File(getCacheDir(), "schoolPics.zip");
+            if (file.exists()) {
+                file.delete();
+                File picDic = new File(getCacheDir(), "school_pics");
+                if (picDic.exists()) {
+                    DatasUtils.deleteDir(picDic);
+                }
             }
+            defaultSharedPreferences.edit().putString("last_version", versionName).commit();
         }
-        defaultSharedPreferences.edit().putString("last_version", versionName).commit();
     }
 
     private void initDatas() {
-        Observable.create(new Observable.OnSubscribe<Boolean>() {
-            @Override
-            public void call(Subscriber<? super Boolean> subscriber) {
-                if (!subscriber.isUnsubscribed()) {
-                    ArrayList<Booth> booths = new ArrayList<>();
-                    for (int boothRaw : Constants.boothArr){
-                        List<Booth> boothList = DatasUtils.readBoothData(LoadingActivity.this.getApplicationContext(), boothRaw);
-                        if (null != boothList){
-                            booths.addAll(boothList);
-                        }
-                        Realm realm = Realm.getDefaultInstance();
-                        realm.beginTransaction();
-                        for (int i = 0; i < booths.size(); i++) {
-                            booths.get(i).id = i;
-                            realm.copyToRealmOrUpdate(booths.get(i));
-                        }
-                        realm.commitTransaction();
+        Observable.create((Observable.OnSubscribe<Boolean>) subscriber -> {
+            if (!subscriber.isUnsubscribed()) {
+                ArrayList<Booth> booths = new ArrayList<>();
+                for (int boothRaw : Constants.boothArr){
+                    List<Booth> boothList = DatasUtils.readBoothData(LoadingActivity.this.getApplicationContext(), boothRaw);
+                    if (null != boothList){
+                        booths.addAll(boothList);
                     }
-                    DatasUtils.readSchoolBooth(LoadingActivity.this);
-                    DatasUtils.readSchoolData2Db(LoadingActivity.this);
-                  //  DatasUtils.readNewMsg2Db(LoadingActivity.this);
-                    subscriber.onNext(true);
+                    Realm realm = Realm.getDefaultInstance();
+                    realm.beginTransaction();
+                    for (int i = 0; i < booths.size(); i++) {
+                        booths.get(i).id = i;
+                        realm.copyToRealmOrUpdate(booths.get(i));
+                    }
+                    realm.commitTransaction();
                 }
-                subscriber.onCompleted();
+                DatasUtils.readSchoolBooth(LoadingActivity.this);
+                DatasUtils.readSchoolData2Db(LoadingActivity.this);
+              //  DatasUtils.readNewMsg2Db(LoadingActivity.this);
+                subscriber.onNext(true);
             }
+            subscriber.onCompleted();
         }).observeOn(AndroidSchedulers.mainThread())
                 .subscribe(aBoolean -> {
                     startActivity(new Intent(LoadingActivity.this, MainActivity.class));
