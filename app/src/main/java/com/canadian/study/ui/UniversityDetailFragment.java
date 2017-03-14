@@ -168,6 +168,8 @@ public class UniversityDetailFragment extends Fragment {
                     textView.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.chongqing, 0, 0);
                 }else if (a.equals(getString(R.string.chengdu))){
                     textView.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.chengdu, 0, 0);
+                }else if (a.equals(getString(R.string.xian))){
+                    textView.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.xian, 0, 0);
                 }
                 textView.setOnClickListener(view -> startActivity(new Intent(getActivity(), SiteActivity.class)));
                 gridLayout.addView(textView);

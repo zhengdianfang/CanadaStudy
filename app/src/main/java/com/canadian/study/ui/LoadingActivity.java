@@ -100,7 +100,7 @@ public class LoadingActivity extends AppCompatActivity {
     }
 
     private void getNewMessages(){
-        AndroidNetworking.get("http://www.dayactive.com/news.txt")
+        AndroidNetworking.get("http://www.chushanju.com/news.txt")
                 .setPriority(Priority.HIGH)
                 .build()
                 .getAsString(new StringRequestListener() {
