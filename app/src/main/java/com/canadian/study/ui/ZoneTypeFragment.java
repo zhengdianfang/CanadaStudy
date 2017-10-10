@@ -15,7 +15,7 @@ import android.widget.TextView;
 import com.canadian.study.R;
 import com.canadian.study.bean.University;
 import com.canadian.study.common.Constants;
-import com.manuelpeinado.imagelayout.ImageLayout;
+import com.canadian.study.ui.views.ImageLayout;
 
 import java.util.ArrayList;
 import java.util.List;

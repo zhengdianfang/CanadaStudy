@@ -222,7 +222,8 @@ public class DatasUtils {
                 realm.copyToRealmOrUpdate(university);
             }
             realm.commitTransaction();
-            all = realm.where(University.class).findAll().sort("pingyingIndex");
+            all = realm.where(University.class).findAll().sort("id");
+                    //.sort("pingyingIndex");
         }
         sUniversities = realm.copyFromRealm(all);
 

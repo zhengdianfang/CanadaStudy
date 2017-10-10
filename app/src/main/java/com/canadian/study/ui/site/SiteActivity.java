@@ -24,10 +24,7 @@ public class SiteActivity extends AppCompatActivity {
             SiteFragment1.class.getName(),
             SiteFragment2.class.getName(),
             SiteFragment3.class.getName(),
-            SiteFragment4.class.getName(),
-            SiteFragment10.class.getName(),
-            SiteFragment5.class.getName(),
-            SiteFragment7.class.getName(),
+            SiteFragment8.class.getName(),
     };
     private ViewGroup tablayout;
 

@@ -9,8 +9,8 @@ android {
         applicationId "com.canadian.study"
         minSdkVersion 14
         targetSdkVersion 24
-        versionCode 9
-        versionName "1.9"
+        versionCode 11
+        versionName "1.9.2"
         multiDexEnabled false
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -75,7 +75,6 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.2.0'
     compile 'io.reactivex:rxandroid:1.2.0'
     compile 'com.google.code.gson:gson:2.2.4'
-    compile 'com.github.manuelpeinado.imagelayout:imagelayout:1.1.0'
     compile 'com.mcxiaoke.volley:library:1.0.19'
     compile 'com.amitshekhar.android:android-networking:0.2.0'
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {

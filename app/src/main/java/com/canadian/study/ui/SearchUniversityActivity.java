@@ -1,5 +1,6 @@
 package com.canadian.study.ui;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -151,8 +152,11 @@ public class SearchUniversityActivity extends AppCompatActivity implements OnIte
             mSearchUniversityItemAdapter.setSelectPosition(position);
             UniversityDetailFragment.openUniversityDetailFragment(this, item.university);
         }
-        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-        inputMethodManager.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
+        View view = this.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
     }
 
     @Override

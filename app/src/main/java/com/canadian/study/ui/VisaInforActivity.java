@@ -13,7 +13,6 @@ import java.io.InputStreamReader;
 
 public class VisaInforActivity extends AppCompatActivity {
 
-    private WebView webview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,18 +52,10 @@ public class VisaInforActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-        webview = (WebView) findViewById(R.id.webView);
-        webview.getSettings().setJavaScriptEnabled(false);
-        webview.getSettings().setAllowFileAccess(true);
-        webview.getSettings().setBuiltInZoomControls(false);
-        webview.getSettings().setSupportZoom(false);
-
-        webview.loadDataWithBaseURL(null,sb.toString(), "text/html", "utf-8", null);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        webview.destroy();
     }
 }
