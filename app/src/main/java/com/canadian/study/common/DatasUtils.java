@@ -191,6 +191,8 @@ public class DatasUtils {
                     University university = parseReadLineStr(s);
                     if (null != university){
                         ++sum;
+                        university.id = sum;
+                        university.picPaths = getUniversityPics(context, university);
                         RealmResults<SchoolCity> schoolCities = realm.where(SchoolCity.class).equalTo("universityName", university.chineseName).findAll();
                         university.isJoinShow = schoolCities.size() > 0;
                         university.schoolCities = new RealmList<>();
@@ -212,16 +214,7 @@ public class DatasUtils {
                 }
             }
             realm.beginTransaction();
-            for (int i = 0; i < universityList.size(); i++) {
-                University university = universityList.get(i);
-                university.id = i;
-                if (university.englishName.startsWith("ShenZhen (NanShan) Concord")){
-                    Log.d("=============", "new school id : " + university.id );
-                }
-                university.picPaths = getUniversityPics(context, university);
-                Log.d("=============", university.englishName + "-----" + university.id);
-                realm.copyToRealmOrUpdate(university);
-            }
+            realm.copyToRealmOrUpdate(universityList);
             realm.commitTransaction();
             all = realm.where(University.class).findAll().sort("pingyingIndex");
         }

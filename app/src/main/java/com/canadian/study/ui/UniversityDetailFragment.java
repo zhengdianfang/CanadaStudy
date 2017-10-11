@@ -61,6 +61,7 @@ public class UniversityDetailFragment extends Fragment {
             mUniversity =  getArguments().getParcelable("university");
         }
         if (mUniversity != null) {
+            Log.d("======", "university name : " + mUniversity.id);
             ((TextView) getView().findViewById(R.id.cnameView)).setText(mUniversity.chineseName);
             ((TextView) getView().findViewById(R.id.enameView)).setText(mUniversity.englishName);
             TextView contentView = (TextView) getView().findViewById(R.id.contentView);
