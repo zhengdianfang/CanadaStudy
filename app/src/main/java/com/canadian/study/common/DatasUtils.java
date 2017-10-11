@@ -219,11 +219,11 @@ public class DatasUtils {
                     Log.d("=============", "new school id : " + university.id );
                 }
                 university.picPaths = getUniversityPics(context, university);
+                Log.d("=============", university.englishName + "-----" + university.id);
                 realm.copyToRealmOrUpdate(university);
             }
             realm.commitTransaction();
-            all = realm.where(University.class).findAll().sort("id");
-                    //.sort("pingyingIndex");
+            all = realm.where(University.class).findAll().sort("pingyingIndex");
         }
         sUniversities = realm.copyFromRealm(all);
 

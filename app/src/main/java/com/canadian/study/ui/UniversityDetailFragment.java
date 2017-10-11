@@ -13,6 +13,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.GridLayout;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -63,7 +64,7 @@ public class UniversityDetailFragment extends Fragment {
             ((TextView) getView().findViewById(R.id.cnameView)).setText(mUniversity.chineseName);
             ((TextView) getView().findViewById(R.id.enameView)).setText(mUniversity.englishName);
             TextView contentView = (TextView) getView().findViewById(R.id.contentView);
-            StringBuffer detail = new StringBuffer(mUniversity.detail == null ? mUniversity.detail : "");
+            StringBuffer detail = new StringBuffer(TextUtils.isEmpty(mUniversity.detail) ?  "" : mUniversity.detail);
             detail.append("\n");
             if (!mUniversity.phonenum.equalsIgnoreCase("0")){
                 detail.append(getString(R.string.school_phone, mUniversity.phonenum));
