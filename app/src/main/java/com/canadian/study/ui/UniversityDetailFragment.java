@@ -115,6 +115,7 @@ public class UniversityDetailFragment extends Fragment {
     }
 
     void initViewPager() {
+        Log.d("======", "university picPaths : " + mUniversity.picPaths);
         if (!TextUtils.isEmpty(mUniversity.picPaths)){
             String[] split = TextUtils.split(mUniversity.picPaths, ";;");
             imageAdapter = new ImageAdapter(split);

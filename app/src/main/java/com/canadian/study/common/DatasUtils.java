@@ -292,7 +292,12 @@ public class DatasUtils {
                 File[] files = file.listFiles();
                 if (files != null) {
                     for (File f : files) {
+                        Log.d("======", "file name : "+ f.getName());
                         if (f.getName().equals(String.valueOf(university.id))) {
+                            if (university.id == 235) {
+                                File[] files1 = f.listFiles();
+                                Log.d("======", "235 dir files count : " + files1.length);
+                            }
                             File[] files1 = f.listFiles();
                             if (files1 != null) {
                                 for (File file1 : files1) {
