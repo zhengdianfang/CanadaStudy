@@ -35,7 +35,8 @@ public class CanadianApplication extends MultiDexApplication {
     }
 
     private void initRealmClient() {
-        RealmConfiguration realmConfiguration = new RealmConfiguration.Builder(this).name(Constants.CANADIA_DB)
+        Realm.init(this);
+        RealmConfiguration realmConfiguration = new RealmConfiguration.Builder().name(Constants.CANADIA_DB)
                 .deleteRealmIfMigrationNeeded().build();
         Realm.setDefaultConfiguration(realmConfiguration);
     }

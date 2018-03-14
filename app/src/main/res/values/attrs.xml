@@ -63,4 +63,5 @@
         <attr name="layout_right" format="integer" />
         <attr name="layout_bottom" format="integer" />
     </declare-styleable>
+
 </resources>

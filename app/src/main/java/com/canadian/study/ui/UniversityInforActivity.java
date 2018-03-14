@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 
 import com.canadian.study.R;
@@ -30,6 +31,9 @@ public class UniversityInforActivity extends AppCompatActivity {
         findViewById(R.id.searchImage).setOnClickListener(view -> {
             startActivity(new Intent(this, SearchUniversityActivity.class));
         });
+
+        findViewById(R.id.frameLayout).setVisibility(View.GONE);
+
         buttons = new Button[]{(Button) findViewById(R.id.zoneTypeButton)
                 , (Button) findViewById(R.id.cittTypeButton), (Button) findViewById(R.id.univerityTypeButton)};
 
@@ -54,9 +58,9 @@ public class UniversityInforActivity extends AppCompatActivity {
                     .hide(zoneFragment).commit();
         });
 
-        zoneFragment = Fragment.instantiate(this, ZoneTypeFragment.class.getName());
+        zoneFragment = Fragment.instantiate(this, SimpleImageFragment.class.getName());
         cityTypeFragment = Fragment.instantiate(this, CityTypeFragment.class.getName());
-        cateproyTypeFragment = Fragment.instantiate(this, CateproyTypeFragment.class.getName());
+        cateproyTypeFragment = Fragment.instantiate(this, SimpleImageFragment.class.getName());
         getSupportFragmentManager().beginTransaction().add(R.id.contentFrame, zoneFragment)
                 .add(R.id.contentFrame, cityTypeFragment)
                 .add(R.id.contentFrame, cateproyTypeFragment)

@@ -25,6 +25,7 @@ public class SiteActivity extends AppCompatActivity {
             SiteFragment2.class.getName(),
             SiteFragment3.class.getName(),
             SiteFragment8.class.getName(),
+            SiteFragment10.class.getName(),
     };
     private ViewGroup tablayout;
 
@@ -79,7 +80,8 @@ public class SiteActivity extends AppCompatActivity {
 
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         for (int i = 0; i < fragmentNames.length; i++) {
-            Fragment fragment = Fragment.instantiate(this, fragmentNames[i]);
+            BaseSiteFragment fragment = (BaseSiteFragment) Fragment.instantiate(this, fragmentNames[i]);
+            fragment.setCanClick(false);
             if (i == index){
                 fragmentTransaction.add(R.id.contentFrame, fragment);
             }else {

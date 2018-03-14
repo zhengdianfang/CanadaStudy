@@ -49,10 +49,10 @@ public class Constants {
 
 
     public static final int[] tabViewNormalBackgroundIds = {R.drawable.beijing_icon_drawable_normal, R.drawable.shanghai_icon_drawable_normal,
-            R.drawable.guangzhou_icon_drawable_normal, R.drawable.chengdu_icon_drawable_normal};
+            R.drawable.guangzhou_icon_drawable_normal, R.drawable.chengdu_icon_drawable_normal, R.drawable.xian_icon_drawable_normal};
 
     public static final int[] tabViewSelectedBackgroundIds = {R.drawable.beijing_icon_drawable_selected, R.drawable.shanghai_icon_drawable_selected,
-            R.drawable.guangzhou_icon_drawable_selected,  R.drawable.chengdu_icon_drawable_selected};
+            R.drawable.guangzhou_icon_drawable_selected,  R.drawable.chengdu_icon_drawable_selected, R.drawable.xian_icon_drawable_selected};
 
-    public static final String[] citynames = {"北京", "上海", "广州", "成都"};
+    public static final String[] citynames = {"北京", "上海", "广州", "成都", "西安"};
 }

@@ -48,6 +48,7 @@ public class GestureImageView extends ImageView  {
 
 	private Drawable drawable;
 
+
 	private float x = 0, y = 0;
 
 	private boolean layout = false;
@@ -65,7 +66,7 @@ public class GestureImageView extends ImageView  {
 	private float centerX;
 	private float centerY;
 	
-	private Float startX, startY;
+	private Float startX, startY = 0f;
 
 	private int hWidth;
 	private int hHeight;
@@ -74,6 +75,7 @@ public class GestureImageView extends ImageView  {
 	private boolean recycle = false;
 	private boolean strict = false;
 
+	private boolean scaleEnable = false;
 	private int displayHeight;
 	private int displayWidth;
 
@@ -112,13 +114,14 @@ public class GestureImageView extends ImageView  {
 		if(strStartY != null && strStartY.trim().length() > 0) {
 			startY = Float.parseFloat(strStartY);
 		}
-		
+
 		setStartingScale(attrs.getAttributeFloatValue(LOCAL_NS, "start-scale", startingScale));
 		setMinScale(attrs.getAttributeFloatValue(LOCAL_NS, "min-scale", minScale));
 		setMaxScale(attrs.getAttributeFloatValue(LOCAL_NS, "max-scale", maxScale));
 		setStrict(attrs.getAttributeBooleanValue(LOCAL_NS, "strict", strict));
 		setRecycle(attrs.getAttributeBooleanValue(LOCAL_NS, "recycle", recycle));
-		
+		setScaleEnable(attrs.getAttributeBooleanValue(LOCAL_NS, "scale-enable", scaleEnable));
+
 		initImage();
 	}
 
@@ -493,6 +496,7 @@ public class GestureImageView extends ImageView  {
 		this.recycle = recycle;
 	}
 
+
 	public void reset() {
 		x = centerX;
 		y = centerY;
@@ -739,6 +743,10 @@ public class GestureImageView extends ImageView  {
     }
 
     public boolean getCanScale() {
-        return false;
+        return scaleEnable;
     }
+
+	public void setScaleEnable(boolean scaleEnable) {
+		this.scaleEnable = scaleEnable;
+	}
 }

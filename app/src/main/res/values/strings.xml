@@ -1,5 +1,5 @@
 <resources>
-     <string name="app_name">留学加拿大官方应用</string>
+    <string name="app_name">留学加拿大官方应用</string>
     <!--<string name="app_name">留学加拿大</string>-->
     <string name="main_text_1"><![CDATA[ <h4>官方留学信息</h4>加拿大留学的优势<br />学习、生活、成功<br />创新型教育机构一览]]></string>
     <string name="join_school_1">%s参展学校</string>
@@ -79,7 +79,7 @@
 <strong>音乐硕士（作曲），维多利亚大学，2005年</strong><br />
 <strong>音乐博士（作曲），多伦多大学，2010年</strong>]]>
     </string>
-     <string name="content_11">
+    <string name="content_11">
         <![CDATA[加拿大和蒙特埃里森大学以其一贯的优质教育闻名，也正是这点吸引我来到这里学习。蒙特埃里森大学是个生活和学习的好地方。老师们是令我崇拜的一流教授和学者，他们都关心我，定期回复我的邮件，记得我的名字，对我的生活和学习关怀有加。我爱美丽的校园、热情的人们、怡人的社区和这种持续一生的友谊。<br />
 <br />
 <strong>邹薇巍</strong><br />
@@ -127,20 +127,20 @@
     <string name="content_17_2">卢平\n纽芬兰纪念大学物理和海洋地理学系\n博士生
     </string>
     <string name="content_18">
-        <strong>加拿大教育文凭全世界认可。</strong>加拿大在英语和法语培训方面居全球领先地位。<br/>
-<br/>
-<strong>合理的费用。</strong>国际学生在加拿大的学习和生活费用平均较低。<br/>
-<br/>
-<strong>与众不同的国家。</strong>加拿大人以好客、开放和宽容著称。加拿大接纳了来自世界各地200种不同种族的人们。<br/>
-<br/>
-<strong>健康安全的社区环境。</strong>你将享有加拿大人可以享受到的同等自由权利：尊重人权、注重平等、追求和平和安定。<br/>
-<br/>
-<strong>世界一流的语言教育。</strong>法语和英语作为第一语言和第二语言教育是加拿大教育体系的重要内容。<br/>
-<br/>
-<strong>丰富多彩的校园生活。</strong>从联网图书馆和奥林匹克场馆级的体育设施到公共音乐厅和美术馆，加拿大的高等院校校园让你能更好的将学习和休闲娱乐结合起来。<br/>
-<br/>
-<strong>创新和众多的研究机会。</strong>加拿大的教育体系植根于我们优秀的研究设施和科研发展的文化。<br/>
-<br/>
+        <strong>加拿大教育文凭全世界认可。</strong>加拿大在英语和法语培训方面居全球领先地位。<br />
+<br />
+<strong>合理的费用。</strong>国际学生在加拿大的学习和生活费用平均较低。<br />
+<br />
+<strong>与众不同的国家。</strong>加拿大人以好客、开放和宽容著称。加拿大接纳了来自世界各地200种不同种族的人们。<br />
+<br />
+<strong>健康安全的社区环境。</strong>你将享有加拿大人可以享受到的同等自由权利：尊重人权、注重平等、追求和平和安定。<br />
+<br />
+<strong>世界一流的语言教育。</strong>法语和英语作为第一语言和第二语言教育是加拿大教育体系的重要内容。<br />
+<br />
+<strong>丰富多彩的校园生活。</strong>从联网图书馆和奥林匹克场馆级的体育设施到公共音乐厅和美术馆，加拿大的高等院校校园让你能更好的将学习和休闲娱乐结合起来。<br />
+<br />
+<strong>创新和众多的研究机会。</strong>加拿大的教育体系植根于我们优秀的研究设施和科研发展的文化。<br />
+<br />
 <strong>一个充满机遇的国家。</strong>加拿大景色美丽多样，四季分明。
     </string>
     <string name="content_19">
@@ -168,4 +168,7 @@ www.cic.gc.ca/english/immigrate/skilled\n\n
 www.cic.gc.ca/english/immigrate/provincial\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
     </string>
     <string name="xian">西安</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

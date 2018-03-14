@@ -1,0 +1,11 @@
+<com.canadian.study.ui.views.GestureImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.polites.com/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@mipmap/list"
+    app:start-scale="1.0"
+    app:scale-enable="true"
+    app:start-y="1200"
+    android:background="@android:color/white"
+    />
