@@ -51,13 +51,13 @@ public class CanadianInforActivity extends AppCompatActivity implements LeftMenu
 
             @Override
             public void onPageSelected(int position) {
-                if (position == 0){
+                if (position == 0) {
                     leftMenuFragment.setSelectMenu(0);
-                }else if (position == 1){
+                } else if (position == 1) {
                     leftMenuFragment.setSelectMenu(1);
-                }else if (position > 1 && position < 6){
+                } else if (position > 1 && position < 6) {
                     leftMenuFragment.setSelectMenu(2);
-                }else if (position == 6){
+                } else if (position == 6) {
                     leftMenuFragment.setSelectMenu(3);
                 }
             }
@@ -81,7 +81,7 @@ public class CanadianInforActivity extends AppCompatActivity implements LeftMenu
 
     @Override
     public void onMenuClick(int index) {
-        switch (index){
+        switch (index) {
             case 0:
                 viewPager.setCurrentItem(0, false);
                 break;
@@ -100,10 +100,12 @@ public class CanadianInforActivity extends AppCompatActivity implements LeftMenu
         drawer.closeDrawer(GravityCompat.END);
     }
 
-    private static class ContentPagerAdapter extends PagerAdapter{
+    private static class ContentPagerAdapter extends PagerAdapter {
         private int[] layoutIds = {R.layout.fragment_canadian_infor_1_layout, R.layout.fragment_canadian_infor_2_layout,
-                R.layout.fragment_canadian_infor_3_layout, R.layout.fragment_canadian_infor_4_layout,
-                R.layout.fragment_canadian_infor_5_layout,R.layout.fragment_canadian_infor_6_layout, R.layout.fragment_canadian_infor_19_layout};
+                R.layout.fragment_canadian_infor_3_layout, R.layout.fragment_canadian_infor_20_layout, R.layout.fragment_canadian_infor_4_layout,
+                R.layout.fragment_canadian_infor_21_layout,
+                R.layout.fragment_canadian_infor_5_layout, R.layout.fragment_canadian_infor_6_layout, R.layout.fragment_canadian_infor_19_layout};
+
         @Override
         public int getCount() {
             return layoutIds.length;

@@ -95,26 +95,20 @@ public class CityTypeFragment extends Fragment implements OnItemClickListener {
 
     private void queryUniversityList() {
         universityItemAdapter.setCityName(Constants.citynames[selectTabIndex]);
-        Observable.just(DatasUtils.sSchoolCities).flatMap(new Func1<List<SchoolCity>, Observable<List<String>>>() {
-            @Override
-            public Observable<List<String>> call(List<SchoolCity> schoolCities) {
-                ArrayList<String> strings = new ArrayList<>();
-                for (SchoolCity schoolCity : schoolCities) {
-                    if (schoolCity.joinCity.equals(Constants.citynames[selectTabIndex])) {
-                        strings.add(schoolCity.universityName);
-                    }
+        Observable.just(DatasUtils.sSchoolCities).flatMap((Func1<List<SchoolCity>, Observable<List<String>>>) schoolCities -> {
+            ArrayList<String> strings = new ArrayList<>();
+            for (SchoolCity schoolCity : schoolCities) {
+                if (schoolCity.joinCity.equals(Constants.citynames[selectTabIndex])) {
+                    strings.add(schoolCity.universityName);
                 }
-                return Observable.just(strings);
             }
-        }).flatMap(new Func1<List<String>, Observable<List<University>>>() {
-            @Override
-            public Observable<List<University>> call(List<String> strings) {
-                List<University> results = new ArrayList<>();
-                Observable.from(DatasUtils.sUniversities).filter(university -> strings.contains(university.chineseName)).subscribe(university -> {
-                    results.add(university);
-                });
-                return Observable.just(results);
-            }
+            return Observable.just(strings);
+        }).flatMap((Func1<List<String>, Observable<List<University>>>) strings -> {
+            List<University> results = new ArrayList<>();
+            Observable.from(DatasUtils.sUniversities).filter(university -> strings.contains(university.chineseName)).subscribe(university -> {
+                results.add(university);
+            });
+            return Observable.just(results);
         }).subscribeOn(Schedulers.newThread())
         .observeOn(AndroidSchedulers.mainThread())
         .subscribe(universities1 -> {

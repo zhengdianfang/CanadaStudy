@@ -81,7 +81,6 @@ public class SiteActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         for (int i = 0; i < fragmentNames.length; i++) {
             BaseSiteFragment fragment = (BaseSiteFragment) Fragment.instantiate(this, fragmentNames[i]);
-            fragment.setCanClick(false);
             if (i == index){
                 fragmentTransaction.add(R.id.contentFrame, fragment);
             }else {

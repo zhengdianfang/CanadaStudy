@@ -26,7 +26,6 @@ import java.util.List;
 
 import io.realm.Realm;
 import rx.Observable;
-import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 
 public class LoadingActivity extends AppCompatActivity {
@@ -69,7 +68,7 @@ public class LoadingActivity extends AppCompatActivity {
         }
     }
 
-    private void initDatas() {
+    private void initData() {
         Observable.create((Observable.OnSubscribe<Boolean>) subscriber -> {
             if (!subscriber.isUnsubscribed()) {
                 ArrayList<Booth> booths = new ArrayList<>();
@@ -88,7 +87,7 @@ public class LoadingActivity extends AppCompatActivity {
                 }
                 DatasUtils.readSchoolBooth(LoadingActivity.this);
                 DatasUtils.readSchoolData2Db(LoadingActivity.this);
-              //  DatasUtils.readNewMsg2Db(LoadingActivity.this);
+                DatasUtils.readNewMsg2Db(LoadingActivity.this);
                 subscriber.onNext(true);
             }
             subscriber.onCompleted();
@@ -123,12 +122,12 @@ public class LoadingActivity extends AppCompatActivity {
                                 realm.commitTransaction();
                             }
                         }
-                        initDatas();
+                        initData();
                     }
 
                     @Override
                     public void onError(ANError anError) {
-                        initDatas();
+                        initData();
                     }
                 });
     }
@@ -137,13 +136,13 @@ public class LoadingActivity extends AppCompatActivity {
         Message message = null;
         if (!TextUtils.isEmpty(str)){
             message = new Message();
-            String[] datas = str.split("###");
-            for (int j=0; j<datas.length; j++){
+            String[] data = str.split("###");
+            for (int j=0; j<data.length; j++){
                 if (j == 0){
-                    String title = datas[j];
+                    String title = data[j];
                     message.title = title;
                 }else if (j == 1){
-                    String content = datas[j];
+                    String content = data[j];
                     message.content = content;
                 }
             }

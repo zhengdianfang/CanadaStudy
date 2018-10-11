@@ -32,8 +32,6 @@ public class UniversityInforActivity extends AppCompatActivity {
             startActivity(new Intent(this, SearchUniversityActivity.class));
         });
 
-        findViewById(R.id.frameLayout).setVisibility(View.GONE);
-
         buttons = new Button[]{(Button) findViewById(R.id.zoneTypeButton)
                 , (Button) findViewById(R.id.cittTypeButton), (Button) findViewById(R.id.univerityTypeButton)};
 
@@ -58,9 +56,9 @@ public class UniversityInforActivity extends AppCompatActivity {
                     .hide(zoneFragment).commit();
         });
 
-        zoneFragment = Fragment.instantiate(this, SimpleImageFragment.class.getName());
+        zoneFragment = Fragment.instantiate(this, ZoneTypeFragment.class.getName());
         cityTypeFragment = Fragment.instantiate(this, CityTypeFragment.class.getName());
-        cateproyTypeFragment = Fragment.instantiate(this, SimpleImageFragment.class.getName());
+        cateproyTypeFragment = Fragment.instantiate(this, CateproyTypeFragment.class.getName());
         getSupportFragmentManager().beginTransaction().add(R.id.contentFrame, zoneFragment)
                 .add(R.id.contentFrame, cityTypeFragment)
                 .add(R.id.contentFrame, cateproyTypeFragment)

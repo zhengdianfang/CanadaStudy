@@ -24,7 +24,8 @@ public class Constants {
             "{'name':'加拿大国际教育局','url':'http://www.cbie.ca'}," +
             "{'name':'加拿大应用技术与职业学院协会','url':'http://www.collegesinstitutes.ca'}," +
             "{'name':'加拿大公立中学国际项目协会','url':'http://www.caps-i.ca'}," +
-            "{'name':'加拿大语言教育联盟','url':'http://www.languagescanada.ca'}" +
+            "{'name':'加拿大语言教育联盟','url':'http://www.languagescanada.ca'}," +
+            "{'name':'加拿大学术英语考试楷尔官方网站','url':'http://www.cael.ca/china'}" +
             "]";
 
     public static final String[] zonenames = {
@@ -54,5 +55,5 @@ public class Constants {
     public static final int[] tabViewSelectedBackgroundIds = {R.drawable.beijing_icon_drawable_selected, R.drawable.shanghai_icon_drawable_selected,
             R.drawable.guangzhou_icon_drawable_selected,  R.drawable.chengdu_icon_drawable_selected, R.drawable.xian_icon_drawable_selected};
 
-    public static final String[] citynames = {"北京", "上海", "广州", "成都", "西安"};
+    public static final String[] citynames = {"北京", "上海", "广州", "成都"};
 }
