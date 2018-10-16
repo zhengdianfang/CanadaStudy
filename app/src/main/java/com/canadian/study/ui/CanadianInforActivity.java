@@ -1,7 +1,10 @@
 package com.canadian.study.ui;
 
+import android.content.Context;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.PagerAdapter;
@@ -42,7 +45,7 @@ public class CanadianInforActivity extends AppCompatActivity implements LeftMenu
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         viewPager = (ViewPager) findViewById(R.id.viewPager);
-        viewPager.setAdapter(new ContentPagerAdapter());
+        viewPager.setAdapter(new ContentPagerAdapter(this));
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -101,6 +104,12 @@ public class CanadianInforActivity extends AppCompatActivity implements LeftMenu
     }
 
     private static class ContentPagerAdapter extends PagerAdapter {
+        private Context context;
+
+        public ContentPagerAdapter(Context context) {
+            this.context = context;
+        }
+
         private int[] layoutIds = {R.layout.fragment_canadian_infor_1_layout, R.layout.fragment_canadian_infor_2_layout,
                 R.layout.fragment_canadian_infor_3_layout, R.layout.fragment_canadian_infor_20_layout, R.layout.fragment_canadian_infor_4_layout,
                 R.layout.fragment_canadian_infor_21_layout,
@@ -119,6 +128,21 @@ public class CanadianInforActivity extends AppCompatActivity implements LeftMenu
             TextView contentView = ((TextView) dataBinding.getRoot().findViewById(R.id.contentView));
             if (contentView != null) {
                 contentView.setMovementMethod(new LinkMovementMethod());
+            }
+            if (position == 3) {
+                contentView.setOnClickListener(v -> {
+                    String url = "http://www.example.com";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    context.startActivity(intent);
+                });
+            } else if(position == 5){
+                contentView.setOnClickListener(v -> {
+                    String url = "http://www.aircanada.com/cn/zh/aco/home.html";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    context.startActivity(intent);
+                });
             }
             return dataBinding.getRoot();
         }
