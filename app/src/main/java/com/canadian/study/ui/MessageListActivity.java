@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -78,8 +79,6 @@ public class MessageListActivity extends AppCompatActivity implements OnItemClic
             super(onItemClickListener);
         }
 
-
-
         @Override
         public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             return new RecyclerView.ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_message_item_layout, parent, false)) {};
@@ -89,7 +88,10 @@ public class MessageListActivity extends AppCompatActivity implements OnItemClic
         public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
             super.onBindViewHolder(holder, position);
             TextView contentView = (TextView) holder.itemView.findViewById(R.id.contentView);
-            contentView.setText(Html.fromHtml(datas.get(position).content));
+            String content = datas.get(position).content;
+            if (!TextUtils.isEmpty(content)) {
+                contentView.setText(Html.fromHtml(content));
+            }
         }
     }
 }

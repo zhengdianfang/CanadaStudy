@@ -355,7 +355,7 @@ public class DatasUtils {
                     message.content = s;
                     message.time = System.currentTimeMillis();
                     messages.add(message);
-                    realm.copyToRealm(message);
+                    realm.copyToRealmOrUpdate(message);
                     ++id;
                 }
             }
