@@ -130,14 +130,14 @@ public class CanadianInforActivity extends AppCompatActivity implements LeftMenu
                 contentView.setMovementMethod(new LinkMovementMethod());
             }
             if (position == 3) {
-                contentView.setOnClickListener(v -> {
-                    String url = "http://www.example.com";
+                dataBinding.getRoot().setOnClickListener(v -> {
+                    String url = "https://www.cael.ca/china";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(url));
                     context.startActivity(intent);
                 });
             } else if(position == 5){
-                contentView.setOnClickListener(v -> {
+                dataBinding.getRoot().setOnClickListener(v -> {
                     String url = "http://www.aircanada.com/cn/zh/aco/home.html";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(url));
