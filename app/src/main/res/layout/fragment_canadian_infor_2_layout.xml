@@ -51,16 +51,6 @@
             tools:layout_constraintRight_creator="1"
             android:id="@+id/linearLayout">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/content_2_2"
-                android:textColor="@android:color/white"
-                android:lineSpacingExtra="8dp"
-                android:gravity="left"
-                android:padding="64dp"
-                android:textSize="26sp"
-                tools:ignore="RtlHardcoded" />
 
             <TextView
                 android:layout_width="wrap_content"

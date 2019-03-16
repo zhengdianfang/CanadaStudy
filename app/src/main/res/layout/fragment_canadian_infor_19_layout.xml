@@ -60,7 +60,7 @@
                 android:padding="16dp"
                 android:autoLink="all"
                 android:text="@string/content_19"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/white"/>
 
         </ScrollView>
     </android.support.constraint.ConstraintLayout>

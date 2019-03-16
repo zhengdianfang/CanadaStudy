@@ -110,10 +110,17 @@ public class CanadianInforActivity extends AppCompatActivity implements LeftMenu
             this.context = context;
         }
 
-        private int[] layoutIds = {R.layout.fragment_canadian_infor_1_layout, R.layout.fragment_canadian_infor_2_layout,
-                R.layout.fragment_canadian_infor_3_layout, R.layout.fragment_canadian_infor_20_layout, R.layout.fragment_canadian_infor_4_layout,
+        private int[] layoutIds = {R.layout.fragment_canadian_infor_1_layout,
+                R.layout.fragment_canadian_infor_2_layout,
+                R.layout.fragment_canadian_infor_3_layout,
+                R.layout.fragment_canadian_infor_20_layout,
+                R.layout.fragment_canadian_infor_22_layout,
+                R.layout.fragment_canadian_infor_4_layout,
                 R.layout.fragment_canadian_infor_21_layout,
-                R.layout.fragment_canadian_infor_5_layout, R.layout.fragment_canadian_infor_6_layout, R.layout.fragment_canadian_infor_19_layout};
+                R.layout.fragment_canadian_infor_5_layout,
+                R.layout.fragment_canadian_infor_6_layout,
+                R.layout.fragment_canadian_infor_19_layout
+        };
 
         @Override
         public int getCount() {
