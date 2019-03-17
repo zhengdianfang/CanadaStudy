@@ -39,38 +39,30 @@
             android:layout_marginLeft="8dp"/>
 
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView33"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            android:layout_gravity="right"
             android:background="@mipmap/aboutcanada1bottombg"
-            tools:layout_constraintBottom_creator="1"
-            tools:layout_constraintRight_creator="1"
-            android:id="@+id/linearLayout">
+            android:lineSpacingExtra="8dp"
+            android:text="@string/content_2_3"
+            android:textColor="@android:color/white"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="RtlHardcoded" />
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/content_2_3"
-                android:textColor="@android:color/white"
-                android:lineSpacingExtra="8dp"
-                android:gravity="right"
-                android:layout_marginRight="64dp"
-                android:layout_gravity="right|center_vertical"
-                android:textSize="14sp"
-                tools:ignore="RtlHardcoded" />
-
-        </LinearLayout>
 
         <ScrollView
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintBottom_toTopOf="@+id/textView33"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             tools:ignore="UnknownIdInLayout"

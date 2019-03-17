@@ -28,6 +28,7 @@ public class UniversityInforActivity extends AppCompatActivity {
             onBackPressed();
         });
 
+        findViewById(R.id.searchImage).setVisibility(View.GONE);
         findViewById(R.id.searchImage).setOnClickListener(view -> {
             startActivity(new Intent(this, SearchUniversityActivity.class));
         });

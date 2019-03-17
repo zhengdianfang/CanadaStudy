@@ -20,7 +20,7 @@ elif command == 2:
     for index in range(len(lines)):
         schoolName = lines[index].partition('###')[0]
         print("%d == %s" % (index, schoolName))
-        newDir = "new_school_pics/%d" % (index)
+        newDir = "new_school_pics/%d" % (index + 1)
         os.makedirs(newDir)
         files = os.listdir('school_pics')
         for file in files:
@@ -35,6 +35,6 @@ elif command == 3:
     for childrenDir in childrenDirs:
         childrenFiles = os.listdir('new_school_pics/' + childrenDir)
         if len(childrenFiles) == 0:
-            print(lines[int(childrenDir)].partition('###')[0])
+            print(lines[int(childrenDir) - 1].partition('###')[0])
 
     schoolData.close()

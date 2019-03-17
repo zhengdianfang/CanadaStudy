@@ -10,4 +10,4 @@ gen
 build
 app/build
 .gradle
-
+release
