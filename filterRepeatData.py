@@ -8,7 +8,7 @@ nameList = []
 repeatNames = []
 allLineMap = {} 
 for line in lineList:
-    name = line.partition('###')[0]
+    name = line.split('###')[1]
     print(name)
     allLineMap[name] = line
     count += 1

@@ -88,7 +88,8 @@ public class MessageListActivity extends AppCompatActivity implements OnItemClic
         public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
             super.onBindViewHolder(holder, position);
             TextView contentView = (TextView) holder.itemView.findViewById(R.id.contentView);
-            String content = datas.get(position).content;
+            Message message = datas.get(position);
+            String content = "[" + message.title + "]" + message.content ;
             if (!TextUtils.isEmpty(content)) {
                 contentView.setText(Html.fromHtml(content));
             }

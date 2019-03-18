@@ -87,7 +87,7 @@ public class LoadingActivity extends AppCompatActivity {
                 }
                 DatasUtils.readSchoolBooth(LoadingActivity.this);
                 DatasUtils.readSchoolData2Db(LoadingActivity.this);
-                DatasUtils.readNewMsg2Db(LoadingActivity.this);
+//                DatasUtils.readNewMsg2Db(LoadingActivity.this);
                 subscriber.onNext(true);
             }
             subscriber.onCompleted();
