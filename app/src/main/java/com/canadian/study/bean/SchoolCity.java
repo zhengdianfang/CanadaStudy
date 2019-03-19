@@ -3,6 +3,8 @@ package com.canadian.study.bean;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.Objects;
+
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
@@ -22,6 +24,14 @@ public class SchoolCity extends RealmObject implements Parcelable {
     public University universitie;
 
     public SchoolCity() {
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        SchoolCity that = (SchoolCity) o;
+        return universityName.equals(that.universityName);
     }
 
     protected SchoolCity(Parcel in) {

@@ -49,6 +49,8 @@ public class University extends RealmObject implements Parcelable{
         isJoinShow = in.readByte() != 0;
     }
 
+
+
     public static final Creator<University> CREATOR = new Creator<University>() {
         @Override
         public University createFromParcel(Parcel in) {

@@ -76,6 +76,8 @@ public class DatasUtils {
                 break;
             case R.raw.xian:
                 city = context.getString(R.string.xian);
+            case R.raw.shenzhen:
+                city = context.getString(R.string.shenzhen);
                 break;
         }
 
@@ -194,11 +196,13 @@ public class DatasUtils {
                         university.id = sum;
                         university.picPaths = getUniversityPics(context, university);
                         RealmResults<SchoolCity> schoolCities = realm.where(SchoolCity.class).equalTo("universityName", university.chineseName).findAll();
-                        university.isJoinShow = schoolCities.size() > 0;
-                        university.schoolCities = new RealmList<>();
-                        university.schoolCities.addAll(schoolCities);
-                        if (null != university){
-                            universityList.add(university);
+                        if (schoolCities != null && schoolCities.size() > 0) {
+                            university.isJoinShow = schoolCities.size() > 0;
+                            university.schoolCities = new RealmList<>();
+                            university.schoolCities.addAll(schoolCities);
+                            if (null != university){
+                                universityList.add(university);
+                            }
                         }
                     }
                 }
